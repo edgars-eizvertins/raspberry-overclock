@@ -1,0 +1,202 @@
+0. RPI 3 - overclocked 1300 Mhz
+
+Maximum prime number checked in CPU test: 20000
+
+Test execution summary:
+    total time:                          93.6061s
+    total number of events:              10000
+    total time taken by event execution: 374.3622
+    per-request statistics:
+         min:                                 35.07ms
+         avg:                                 37.44ms
+         max:                                175.54ms
+         approx.  95 percentile:              50.27ms
+
+Threads fairness:
+    events (avg/stddev):           2500.0000/18.64
+    execution time (avg/stddev):   93.5906/0.01
+
+
+1. RPI 4 - base 1500 Mhz, max 65 C
+
+Maximum prime number checked in CPU test: 20000
+
+
+Test execution summary:
+    total time:                          62.8699s
+    total number of events:              10000
+    total time taken by event execution: 251.4214
+    per-request statistics:
+         min:                                 24.94ms
+         avg:                                 25.14ms
+         max:                                 72.90ms
+         approx.  95 percentile:              25.14ms
+
+Threads fairness:
+    events (avg/stddev):           2500.0000/6.44
+    execution time (avg/stddev):   62.8553/0.00
+
+2. RPI 4 - overclock, max 73 C
+
+arm_freq=1750
+gpu_freq=600
+over_voltage=4
+
+
+Maximum prime number checked in CPU test: 20000
+
+
+Test execution summary:
+    total time:                          53.7223s
+    total number of events:              10000
+    total time taken by event execution: 214.8335
+    per-request statistics:
+         min:                                 21.37ms
+         avg:                                 21.48ms
+         max:                                 57.91ms
+         approx.  95 percentile:              21.49ms
+
+Threads fairness:
+    events (avg/stddev):           2500.0000/0.71
+    execution time (avg/stddev):   53.7084/0.01
+
+
+3. RPI 4 - overclock, max 80 C
+
+arm_freq=2000
+gpu_freq=600
+over_voltage=4
+
+Maximum prime number checked in CPU test: 20000
+
+
+Test execution summary:
+    total time:                          46.9825s
+    total number of events:              10000
+    total time taken by event execution: 187.8933
+    per-request statistics:
+         min:                                 18.70ms
+         avg:                                 18.79ms
+         max:                                 50.75ms
+         approx.  95 percentile:              18.80ms
+
+Threads fairness:
+    events (avg/stddev):           2500.0000/0.71
+    execution time (avg/stddev):   46.9733/0.01
+
+4.  RPI 4 - overclock, max C, FAIL
+
+arm_freq=2100
+gpu_freq=600
+over_voltage=4
+
+FAIL
+
+5.  RPI 4 - overclock, max 80 C
+
+arm_freq=2100
+gpu_freq=600
+over_voltage=5
+
+Maximum prime number checked in CPU test: 20000
+
+
+Test execution summary:
+    total time:                          44.7477s
+    total number of events:              10000
+    total time taken by event execution: 178.9775
+    per-request statistics:
+         min:                                 17.79ms
+         avg:                                 17.90ms
+         max:                                 57.89ms
+         approx.  95 percentile:              17.90ms
+
+Threads fairness:
+    events (avg/stddev):           2500.0000/1.22
+    execution time (avg/stddev):   44.7444/0.00
+
+6.  RPI 4 - overclock, max C, FAIL
+
+arm_freq=2150
+gpu_freq=600
+over_voltage=5
+
+
+7.  RPI 4 - overclock, max C, FAIL
+
+arm_freq=2150
+gpu_freq=600
+over_voltage=6
+
+
+8.  RPI 4 - overclock, max C
+
+arm_freq=2125
+gpu_freq=600
+over_voltage=6
+
+Test execution summary:
+    total time:                          44.2261s
+    total number of events:              10000
+    total time taken by event execution: 176.8675
+    per-request statistics:
+         min:                                 17.60ms
+         avg:                                 17.69ms
+         max:                                 57.82ms
+         approx.  95 percentile:              17.69ms
+
+Threads fairness:
+    events (avg/stddev):           2500.0000/0.71
+    execution time (avg/stddev):   44.2169/0.01
+
+9.  RPI 4 - overclock, max C, FAIL
+
+arm_freq=2133
+gpu_freq=600
+over_voltage=6
+
+10. RPI 4 - overclock, max C, FAIL
+
+arm_freq=2125
+gpu_freq=600
+over_voltage=5
+
+Maximum prime number checked in CPU test: 20000
+
+
+Test execution summary:
+    total time:                          44.2391s
+    total number of events:              10000
+    total time taken by event execution: 176.9224
+    per-request statistics:
+         min:                                 17.60ms
+         avg:                                 17.69ms
+         max:                                 53.29ms
+         approx.  95 percentile:              17.69ms
+
+Threads fairness:
+    events (avg/stddev):           2500.0000/0.71
+    execution time (avg/stddev):   44.2306/0.00
+
+11. RPI 4 - overclock, max 82 C, sometimes throtling occurs
+
+arm_freq=2120
+gpu_freq=600
+over_voltage=5
+
+Maximum prime number checked in CPU test: 20000
+
+
+Test execution summary:
+    total time:                          44.3794s
+    total number of events:              10000
+    total time taken by event execution: 177.4562
+    per-request statistics:
+         min:                                 17.64ms
+         avg:                                 17.75ms
+         max:                                 63.45ms
+         approx.  95 percentile:              17.73ms
+
+Threads fairness:
+    events (avg/stddev):           2500.0000/0.71
+    execution time (avg/stddev):   44.3640/0.01
